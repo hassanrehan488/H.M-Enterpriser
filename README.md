@@ -1,53 +1,120 @@
-# HM Enterprise Oman — Laravel Ecommerce Starter
+# H.M Enterpriser — Laravel E-Commerce Website
 
-This is a complete starter structure for the HM Enterprise bedsheet store.
+H.M Enterpriser is an online bedsheet store designed to showcase stylish, comfortable, and elegant bedding collections. The website provides a user-friendly shopping experience with product browsing, cart management, checkout, and order tracking.
 
-## Included
-- Laravel PHP MVC structure
-- Product catalogue and categories
-- Session cart
-- Checkout form
-- Unique order tracking IDs such as `HM-261004-AB12CD`
-- Order tracking page
-- WhatsApp direct ordering
-- English / Arabic / Urdu language switching
-- Oman pricing in OMR
-- Responsive CSS
-- Your supplied homepage image is included as `public/images/hero.png`
-- SQLite database
-- Product and order migrations
-- Seed data for the 10 visible products
+## About the Project
 
-## Install
+This project is built using Laravel and PHP to provide an e-commerce platform for the H.M Enterpriser bedsheet business, with support for English, Arabic, and Urdu languages.
 
-1. Create a fresh Laravel project:
-   `composer create-project laravel/laravel hm-enterprise`
-2. Copy these files into the project, replacing matching files.
-3. Copy `.env.example` to `.env`.
-4. Run:
-   `php artisan key:generate`
-5. Create the SQLite database:
-   `touch database/database.sqlite`
-   (On Windows, create an empty file named `database.sqlite` inside `database/`.)
-6. Put your real WhatsApp number in `.env`:
-   `WHATSAPP_NUMBER=968XXXXXXXX`
-7. Run:
-   `php artisan migrate --seed`
-8. Start:
-   `php artisan serve`
+## Features
 
-Open `http://127.0.0.1:8000`.
+- **Product Catalogue:** Browse bedsheets and product categories.
+- **Shopping Cart:** Add products to a session-based cart.
+- **Checkout:** Submit orders through a checkout form.
+- **Order Tracking:** Track orders using unique tracking IDs.
+- **WhatsApp Ordering:** Contact the business directly through WhatsApp.
+- **Multilingual Support:** English, Arabic, and Urdu language switching.
+- **Oman Currency:** Product pricing in Omani Rial (OMR).
+- **Responsive Design:** Layout optimized for different screen sizes.
+- **SQLite Database:** Lightweight database configuration.
+- **Database Seeders:** Sample product data for testing.
+- **Homepage Hero Image:** Includes a homepage image at `public/images/hero.png`.
 
-## Important
-The WhatsApp links are ready, but you must replace the placeholder Oman number with the actual business WhatsApp number.
+## Technologies Used
 
-## Production upgrades recommended
-- Laravel Breeze/Fortify for admin login
-- Admin product/order CRUD
-- Real payment gateway
-- Image upload/storage
-- Stock/inventory
-- Customer accounts
-- Email/SMS/WhatsApp API notifications
-- Order status admin controls
-- CSRF/rate limiting and server-side validation
+- PHP
+- Laravel
+- HTML
+- CSS
+- JavaScript
+- SQLite
+- Blade Templates
+
+## Installation and Setup
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- PHP
+- Composer
+- Git
+- A web browser
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/hassanrehan488/H.M-Enterpriser.git
+cd hm-enterprise-laravel
+```
+
+### 2. Install Dependencies
+
+```bash
+composer install
+```
+
+### 3. Configure Environment Variables
+
+Copy `.env.example` to `.env`.
+
+On Windows PowerShell, run:
+
+```powershell
+Copy-Item .env.example .env
+```
+
+### 4. Generate the Application Key
+
+```bash
+php artisan key:generate
+```
+
+### 5. Configure the Database
+
+Configure SQLite in your `.env` file and create an empty database file at `database/database.sqlite` if it does not already exist.
+
+### 6. Configure WhatsApp Ordering
+
+Set your actual business WhatsApp number in the appropriate environment variable or application configuration. The example number is only a placeholder.
+
+### 7. Run Migrations and Seeders
+
+```bash
+php artisan migrate --seed
+```
+
+### 8. Start the Development Server
+
+```bash
+php artisan serve
+```
+
+Open the local URL shown in your terminal, usually:
+
+`http://127.0.0.1:8000`
+
+## Future Improvements
+
+- Admin dashboard for managing products and orders.
+- Product image uploads and inventory management.
+- Customer accounts and order history.
+- Online payment gateway integration.
+- Email and SMS order notifications.
+- Enhanced security and server-side validation.
+
+## Project Purpose
+
+The goal of H.M Enterpriser is to establish an attractive online presence for a bedsheet business and make it easier for customers to explore bedding products and place orders.
+
+## Author
+
+**H.M Enterpriser**
+
+## License
+
+No license has been specified yet. Please add a `LICENSE` file if you intend to distribute this project under a particular open-source license.
+
+---
+
+**H.M Enterpriser — Bringing Comfort and Style to Your Bedroom.**
